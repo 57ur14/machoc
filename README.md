@@ -10,6 +10,6 @@ The only dependency is Metasm, which can be installed with ``gem install metasm`
 ``ruby ruby-machoc_simplified.rb /path/to/pe_executable.exe``
 
 ## Notice on performance ##
-Extracting the Machoc hash of executables with complex code seems to be quite slow and require up to 15 seconds, but the mean execution time seems to be somewhere between  3 and 4 seconds per file (when testing on a dataset containing malicious PE32 executables).
+Extracting the Machoc hash of executables with complex code seems to be quite slow and require up to 20 seconds on a Intel Core i5-7200U, but the mean execution time seems to be somewhere between  3 and 4 seconds per file when experimenting on a dataset of malicious executables.
 
 Similar experiments using the Python+Radare2 implementation [Machoke](https://github.com/conix-security/machoke) indicate that this ruby implementation calculates Machoc hashes approximately 40 % faster.
