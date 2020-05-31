@@ -5,7 +5,7 @@
 # Code before line 17 and after line 197 is added, the rest is taken directly from
 # AnalyzeIt.rb: https://github.com/ANSSI-FR/polichombr/blob/72c3d5e818100f824486a9ae48278075de3b3c39/polichombr/analysis_tools/AnalyzeIt.rb
 
-require 'metasm'            # Installation: ``gem install metasm``
+require 'metasm'            # Installation: gem install metasm
 include Metasm
 
 if ARGV.length != 1
